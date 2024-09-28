@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe Técnico - Volatility 75 Index</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>📈 Informe Técnico Avanzado - Índice de Volatilidad 75 (VIX75s)</h1>
+    </header>
+
+    <section id="tendencias">
+        <h2>1. Tendencias por Marco Temporal</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Marco Temporal</th>
+                    <th>Tendencia</th>
+                    <th>Comentario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>H1 (1 Hora)</td>
+                    <td class="alcista">🟢 Alcista Fuerte</td>
+                    <td>EMA 20 > EMA 50 y 100. Momentum fuerte en OsMA.</td>
+                </tr>
+                <tr>
+                    <td>M15 (15 Minutos)</td>
+                    <td class="alcista">🟢 Alcista</td>
+                    <td>Ligera desaceleración en OsMA, pero mantiene la tendencia.</td>
+                </tr>
+                <tr>
+                    <td>M5 (5 Minutos)</td>
+                    <td class="alcista">🟢 Alcista con Consolidación</td>
+                    <td>Posible consolidación a corto plazo. %R en sobrecompra.</td>
+                </tr>
+                <tr>
+                    <td>M1 (1 Minuto)</td>
+                    <td class="alcista">🟢 Alcista con Retroceso</td>
+                    <td>Momentum positivo, pero %R indica retroceso en corto plazo.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="niveles">
+        <h2>2. Niveles Clave de Entrada, Take Profit y Stop Loss</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Acción</th>
+                    <th>Nivel de Precio</th>
+                    <th>Comentario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Entrada</td>
+                    <td class="verde">🟢 8,791.11</td>
+                    <td>Entrada recomendada en base al análisis de M1.</td>
+                </tr>
+                <tr>
+                    <td>Take Profit 1</td>
+                    <td class="verde">🟢 8,870.00</td>
+                    <td>Primer objetivo conservador.</td>
+                </tr>
+                <tr>
+                    <td>Take Profit 2</td>
+                    <td class="verde">🟢 8,920.00</td>
+                    <td>Segundo objetivo para aprovechar un impulso extendido.</td>
+                </tr>
+                <tr>
+                    <td>Stop Loss</td>
+                    <td class="rojo">🔴 8,650.00</td>
+                    <td>Protege contra movimientos inesperados.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="fibonacci">
+        <h2>3. Retrocesos de Fibonacci</h2>
+        <canvas id="fibonacciChart"></canvas>
+    </section>
+
+    <section id="indicadores">
+        <h2>4. Indicadores Secundarios</h2>
+        <div>
+            <p><strong>MACD</strong>:</p>
+            <ul>
+                <li><strong>H1</strong>: Cruce positivo, confirmando tendencia alcista.</li>
+                <li><strong>M5</strong>: Mostrando convergencia, atención a posible corrección en corto plazo.</li>
+            </ul>
+        </div>
+        <div>
+            <p><strong>Ichimoku Kinko Hyo</strong>:</p>
+            <p>El precio está claramente por encima del Kumo, confirmando una tendencia alcista fuerte.</p>
+        </div>
+    </section>
+
+    <section id="duracion">
+        <h2>5. Duración Estimada de la Operación</h2>
+        <canvas id="duracionChart"></canvas>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
